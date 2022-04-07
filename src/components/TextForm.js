@@ -44,9 +44,9 @@ export default function TextForm(props) {
 
     return (
         <>
-            <div className="container mt-5 custom-text-area text-center">
-                <label htmlFor="exampleFormControlTextarea1" className="form-label text-dark"><h2><strong>{props.heading}</strong></h2></label>
-                <textarea className="form-control h-100 w-75 m-auto" onChange={handleOnChange} value={text} id="myText" rows="15"></textarea>
+            <div className="container mt-5 custom-text-area text-center" style={{color: props.mode === 'dark'?'white':'#000000e6'}}>
+                <label htmlFor="exampleFormControlTextarea1" className="form-label text-dark"><h2><strong  style={{color: props.mode === 'dark'?'white':'#000000e6'}}>{props.heading}</strong></h2></label>
+                <textarea className="form-control h-100 w-75 m-auto"  style={{background: props.mode === 'dark'?'#212529':'#fff',color: props.mode === 'dark'?'white':'#000000e6'}} onChange={handleOnChange} value={text} id="myText" rows="15"></textarea>
                 <div className="counter">
                     <span><h5 className='m-0'>Your text Summary</h5></span>
                     <div className="d-flex justify-content-center alin align-items-center">
