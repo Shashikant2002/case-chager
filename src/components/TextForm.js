@@ -13,11 +13,13 @@ export default function TextForm(props) {
     const changeUpperCase = () => {
         let newText = text.toUpperCase();
         setText(newText);
+        props.setalert("Converted To Upper Case", "success");
     }
 
     const changeLowerCase = () => {
         let newText = text.toLowerCase();
         setText(newText);
+        props.setalert("Converted To Lower Case", "success");
     }
 
     const changeCapitalizedCase = () => {
@@ -26,20 +28,24 @@ export default function TextForm(props) {
             newText[i] = newText[i].charAt(0).toUpperCase() + newText[i].slice(1);
         }
         setText(newText.join(' '));
+        props.setalert("Converted To Capitalized Case", "success");
     }
 
     
     const clearText = () => {
         setText("");
+        props.setalert("Clear Text", "success");
     }
     const copyText = () => {
         let text = document.getElementById('myText');
         text.select();
         navigator.clipboard.writeText(text.value);
+        props.setalert("Copy Text", "success");
     }
     const removeExtraSpaces = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
+        props.setalert("Removed Extra Spaces", "success");
     }
 
     return (
