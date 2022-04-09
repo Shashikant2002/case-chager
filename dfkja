@@ -1,0 +1,23 @@
+[33mcommit 338b175c6389b5dde2aa5af537910f51cfe4593c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: jangle mangle <you@example.com>
+Date:   Sat Apr 9 17:30:06 2022 +0530
+
+    Complete
+
+[33mcommit afb898e0dbf9d64202f6a7cea46fc762f2ba32fa[m
+Author: jangle mangle <you@example.com>
+Date:   Thu Apr 7 22:53:54 2022 +0530
+
+    Completed Dark Mode
+
+[33mcommit 8a5f04f89ce0d5eb6ae2a6dda0afc91a81a5d412[m
+Author: jangle mangle <you@example.com>
+Date:   Thu Apr 7 21:30:24 2022 +0530
+
+    Start on Dark Mode Site
+
+[33mcommit da48f68df7ad497d11580a7ef4e879e537037f7c[m
+Author: jangle mangle <you@example.com>
+Date:   Sat Apr 2 23:34:58 2022 +0530
+
+    Initialize project using Create React App
