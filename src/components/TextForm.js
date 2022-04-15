@@ -95,14 +95,14 @@ export default function TextForm(props) {
                         <span><h4>Word: </h4></span>
                         <h4 className="mx-3">{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length}</h4><h4>,</h4>
                         <span><h4>Character: </h4></span>
-                        <h4 className="mx-3">{text.length}</h4>
+                        <h4 className="mx-3">{text.split("").filter((element) => { return element.length !== 0 }).length}</h4>
                     </div>
                 </div>
                 <div className="button my-2">
                     <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={copyText}>Copy Text</button>
                     <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={clearText}>Clear Text</button>
-                    <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={changeUpperCase}>UPPER CASE</button>
-                    <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={changeLowerCase}>lower case</button>
+                    <button disabled={text.length === 0 || text === text.toUpperCase()} className='btn btn-dark mx-2 my-2' onClick={changeUpperCase}>UPPER CASE</button>
+                    <button disabled={text.length === 0 || text === text.toLowerCase()} className='btn btn-dark mx-2 my-2' onClick={changeLowerCase}>lower case</button>
                     <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={changeCapitalizedCase}>Capitalized Case</button>
                     <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={changeAlternateCase}>aLtErNaTe cAsE</button>
                     <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={changeFirstSmallCase}>fIRST sMALL</button>

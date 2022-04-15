@@ -42,8 +42,8 @@ function App() {
                 <Navbar title="Case Changer" mode={mode} toggleMode={toggleMode} />
                 <Alert alert={alert} />
                 <Routes>
-                    <Route exact path="/" element={<TextForm heading="Text Area" setalert={setalert} mode={mode} />} />
-                    <Route exact path="/about" element={<AboutUs mode = {mode} />} />
+                    <Route path="/case-chager" element={<TextForm heading="Text Area" setalert={setalert} mode={mode} />} />
+                    <Route path="/about" element={<AboutUs mode = {mode} />} />
                 </Routes>
             </Router>
         </>
