@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/case-chager/static/css/main.17b26891.css",
-    "main.js": "/case-chager/static/js/main.9a24646d.js",
+    "main.js": "/case-chager/static/js/main.3a64c78d.js",
     "static/js/787.a9120f67.chunk.js": "/case-chager/static/js/787.a9120f67.chunk.js",
     "index.html": "/case-chager/index.html",
     "main.17b26891.css.map": "/case-chager/static/css/main.17b26891.css.map",
-    "main.9a24646d.js.map": "/case-chager/static/js/main.9a24646d.js.map",
+    "main.3a64c78d.js.map": "/case-chager/static/js/main.3a64c78d.js.map",
     "787.a9120f67.chunk.js.map": "/case-chager/static/js/787.a9120f67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17b26891.css",
-    "static/js/main.9a24646d.js"
+    "static/js/main.3a64c78d.js"
   ]
 }
