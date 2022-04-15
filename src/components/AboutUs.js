@@ -1,26 +1,31 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-export default function AboutUs() {
-    const [btn, setbtn] = useState("Enable Dark mode")
-    const [DarkStyle, setDarkStyle] = useState({
-        backgroundColor: "#fff",
-        color: "rgb(31,31,31)"
-        });
+export default function AboutUs(props) {
+    // const [btn, setbtn] = useState("Enable Dark mode")
+    // const [DarkStyle, setDarkStyle] = useState({
+    //     backgroundColor: "#fff",
+    //     color: "rgb(31,31,31)"
+    //     });
 
-        const darkMode = () => {
-            if(DarkStyle.color === '#fff'){
-                 setDarkStyle({
-                    color: "#000", 
-                    backgroundColor: "rgb(255,255,255)"
-                });
-                setbtn("Enable Dark Mode");
-            }else{
-                setDarkStyle({
-                    color: "#fff",
-                    backgroundColor: "rgb(31,31,31)"
-                });
-                setbtn("Enable Light Mode");
-            }
+        // const darkMode = () => {
+        //     if(DarkStyle.color === '#fff'){
+        //          setDarkStyle({
+        //             color: "#000", 
+        //             backgroundColor: "rgb(255,255,255)"
+        //         });
+        //         setbtn("Enable Dark Mode");
+        //     }else{
+        //         setDarkStyle({
+        //             color: "#fff",
+        //             backgroundColor: "rgb(31,31,31)"
+        //         });
+        //         setbtn("Enable Light Mode");
+        //     }
+        // }
+
+        let DarkStyle = {
+            color: props.mode === 'dark' ? 'white' : 'black',             
+            backgroundColor: props.mode === 'dark' ? '#2C3033' : '#fff'
         }
 
     return (
@@ -31,7 +36,7 @@ export default function AboutUs() {
                     <div className="accordion-item" style={DarkStyle}>
                         <h2 className="accordion-header" id="headingOne">
                             <button className="accordion-button" type="button" style={DarkStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
+                                Analyze Your Text
                             </button>
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -43,7 +48,7 @@ export default function AboutUs() {
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingTwo" style={DarkStyle}>
                             <button className="accordion-button collapsed" style={DarkStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
+                                Free To Use
                             </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -55,7 +60,7 @@ export default function AboutUs() {
                     <div className="accordion-item" style={DarkStyle}>
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed" style={DarkStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                                Browser Compatable
                             </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -65,7 +70,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <button type='button' className='btn btn-dark my-3' onClick={darkMode}>{btn}</button>
+                {/* <button type='button' className='btn btn-dark my-3' onClick={darkMode}>{btn}</button> */}
             </div>
         </div>
     )

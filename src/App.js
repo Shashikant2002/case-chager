@@ -43,7 +43,7 @@ function App() {
                 <Alert alert={alert} />
                 <Routes>
                     <Route exact path="/" element={<TextForm heading="Text Area" setalert={setalert} mode={mode} />} />
-                    <Route exact path="/about" element={<AboutUs />} />
+                    <Route exact path="/about" element={<AboutUs mode = {mode} />} />
                 </Routes>
             </Router>
         </>
