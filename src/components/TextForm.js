@@ -110,6 +110,42 @@ export default function TextForm(props) {
                     <button disabled={text.length === 0} className='btn btn-dark mx-2 my-2' onClick={changeInvertCase}>Invert Case</button>
 
                 </div>
+
+                <div className="textcontent wid-70 mt-5">
+                    <p>online case converter allows you to convert the case and change the case of your text from UPPERCASE to lower case, lower case to UPPERCASE, or capitalize words in phrases with a single click. This text converter is designed for you if you don't know how to convert the text in Word, Notepad, or other word processing software.
+                    </p>
+                    <h3>Lower case</h3>
+                    <p>If you're wondering how to uncapitalize text, this is exactly what the lower case text converter will allow you to do. It reduces the size of all the letters in your text. To convert lowercase from caps to lowercase, copy the text you want to convert to lowercase, paste it into the above box, and click the 'lower case' tab.
+                        "this is an example of a lower case".</p>
+                    <h3>Upper case</h3>
+                    <p>The upper case transformer takes any text and converts all letters to caps. It will essentially convert lowercase letters to CAPITALS (while keeping uppercase letters as uppercase letters).
+                        Copy the text you want to change and paste it into the above box, then click the UPPER CASE tab.
+                        "THIS IS AN EXAMPLE OF AN UPPER CASE".</p>
+                    <h3>Capitalize case</h3>
+                    <p> The capitalized case converter will automatically convert the first letter of each word to upper case and leave the remaining letters as lower case letters.
+                        Copy the content you want to convert to this format, paste the form above into the box and choose the Capitalized Case tab.
+                        "This Is An Example Of Capitalized Case Tab".
+                    </p>
+                    <h3>Alternating Case</h3>
+                    <p>The alternating case converter converts your text (regardless of its current format) into text alternating between lower and upper cases. It will generate a capital letter within the same word followed by a lower case letter.
+                        this is an "aLtErNaTiNg cAsE TaB ExAmPlE".
+                    </p>
+                    <h3>Copy Text</h3>
+                    <p>The Copy text converter allows you to copy any text you write. Just click on "copy text", and your whole sentence automatically will get copied.</p>
+                    <h3>Clear Text</h3>
+                    <p>The clear text converter allows you to clear all the written text. You can also clear the selected text if you want to.</p>
+                    <h3>First small</h3>
+                    <p>The first small converter will automatically convert the first letter of each word to lower case and leave the remaining letters as upper case letters.
+                        Copy the content you want to convert to this format, paste the form above into the box and choose the First small tab.
+                        "tHIS iS aN eXAMPLE oF fIRST sMALL".
+                    </p>
+                    <h3>Remove Extra Spaces</h3>
+                    <p>Remove Extra Spaces is a simple tool for eliminating extra spaces between words. Extra spaces should be copied, pasted, and deleted.</p>
+                    <h3>Invert case</h3>
+                    <p>Uppercase characters are converted to lowercase, and lowercase characters are converted to uppercase. Paste your text into the tool's first text area, and it will get converted immediately!
+                        "EXAMPLE of this IS - example OF THIS is".
+                    </p>
+                </div>
             </div>
         </>
     );

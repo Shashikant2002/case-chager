@@ -25,13 +25,23 @@ export default function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/case-chager">
+                                <Link className="nav-link active" to="/">
                                     <strong>Home</strong>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/about">
                                     <strong>About Us</strong>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/terms">
+                                    <strong>Terms & Conditions</strong>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/pry">
+                                    <strong>Privacy Policy</strong>
                                 </Link>
                             </li>
                             <li>

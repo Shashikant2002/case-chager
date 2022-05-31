@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
 import AboutUs from "./components/AboutUs";
+import Terms from "./components/Terms";
+import Privacy from "./components/Privacy";
+import Footer from "./components/Footer";
 import React from "react";
 import {
     BrowserRouter as Router,
@@ -42,9 +45,12 @@ function App() {
                 <Navbar title="Case Changer" mode={mode} toggleMode={toggleMode} />
                 <Alert alert={alert} />
                 <Routes>
-                    <Route path="/case-chager" element={<TextForm heading="Text Area" setalert={setalert} mode={mode} />} />
+                    <Route path="/" element={<TextForm heading="Text Area" setalert={setalert} mode={mode} />} />
                     <Route path="/about" element={<AboutUs mode = {mode} />} />
+                    <Route path="/terms" element={<Terms mode = {mode} />} />
+                    <Route path="/pry" element={<Privacy mode = {mode} />} />
                 </Routes>
+                <Footer mode={mode} />
             </Router>
         </>
     );
